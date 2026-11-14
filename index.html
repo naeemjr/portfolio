@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academic portfolio of Naeem Roussas — computer science research in cybersecurity, privacy, and trustworthy systems."
+    />
+    <meta name="author" content="Naeem Roussas" />
+    <meta name="theme-color" content="#12345a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Naeem Roussas — Academic Portfolio" />
+    <meta property="og:description" content="Cybersecurity research, secure systems, public-sector resilience, and applied threat intelligence." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Naeem Roussas — Academic Portfolio" />
+    <meta name="twitter:description" content="Cybersecurity research, secure systems, public-sector resilience, and applied threat intelligence." />
+    <title>Naeem Roussas Portfolio</title>
+    <link rel="canonical" href="https://naeemroussas.tech/" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- I keep the navigation and status text here so I can update the site quickly. -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Naeem Roussas home">NR</a>
+        <div class="header-status">Open to research conversations</div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span>Menu</span>
+          <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research &amp; writing</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Credentials</a>
+          <a href="#technical">CTF / Technical</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+      <!-- I update my name, role, introduction, and profile links in this hero block. -->
+      <section id="top" class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1>Naeem<br />Roussas</h1>
+          <p class="hero-role">Cybersecurity researcher focused on public-sector resilience.</p>
+          <p class="hero-intro">
+            I work on Linux kernel and network security, threat intelligence, and
+            public-infrastructure assurance.
+          </p>
+          <div class="hero-links">
+            <a class="button button-dark" href="#research">View my research <span>↓</span></a>
+            <a class="button button-dark" href="academic-cv.html">Academic CV <span>↗</span></a>
+            <a class="button button-dark" href="https://github.com/naeemjr" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+            <a class="button button-dark" href="https://www.linkedin.com/in/naeemr/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          </div>
+          <div class="profile-strip" aria-label="Research profile">
+            <div><span>Discipline</span><strong>Computer science</strong></div>
+            <div><span>Focus</span><strong>Cybersecurity</strong></div>
+            <div><span>Next step</span><strong>PhD research</strong></div>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <div class="hero-focus-panel">
+            <canvas id="profile-canvas" aria-hidden="true"></canvas>
+            <span class="eyebrow">Research focus</span>
+            <strong>Security for systems people rely on.</strong>
+            <ul>
+              <li>Threat intelligence</li>
+              <li>Kernel and network security</li>
+              <li>Public infrastructure</li>
+            </ul>
+          </div>
+          <p class="location">Based in Houston, Texas<br />Applying for PhD study in computer science</p>
+        </div>
+      </section>
+
+      <div class="notice-bar">
+        <div class="container notice-inner">
+          <span class="notice-mark">—</span>
+          <span>Interested in secure systems, privacy, and the protection of public infrastructure.</span>
+          <span class="notice-code">Current focus</span>
+        </div>
+      </div>
+
+      <div class="rule container"></div>
+
+      <!-- 01 About: I keep my short biography and public profile links here. -->
+      <section id="about" class="section container split-section">
+        <div class="section-label">
+          <span class="section-number">01</span>
+          <h2>About me</h2>
+        </div>
+        <div class="section-content about-content">
+          <p>
+            I started working as a Linux systems administrator at 16, managing BGP/OSPF routing and Linux servers. Over four years of operational security work and independent research since then, I've built hardware and kernel testbeds for eBPF/XDP network security experiments and published six companion open-source prototypes.
+          </p>
+          <p>
+            In 2026 I shifted toward independent security research full-time — publishing papers on election infrastructure assurance and kernel-boundary anomaly detection, writing eBPF packet filters, and doing responsible-disclosure vulnerability research across bug-bounty programs.
+          </p>
+          <p>
+            I finish my B.S. in Cybersecurity in December 2026 and am applying to Computer Science Ph.D. programs for Fall 2027. Longer term, I want to do applied security research in federal labs, UARCs/FFRDCs, or government-partnered research centers.
+          </p>
+          <a class="text-link" href="https://github.com/naeemjr" target="_blank" rel="noreferrer">View my GitHub profile <span>↗</span></a>
+          <div class="profile-links" aria-label="Professional links">
+            <a href="https://github.com/naeemjr" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/naeemr/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 Research: I can copy a publication-item article when I add a paper. -->
+      <section id="research" class="section container split-section">
+        <canvas id="research-canvas" class="section-3d-canvas" aria-hidden="true"></canvas>
+        <div class="section-label">
+          <span class="section-number">02</span>
+          <h2>Research &amp; writing</h2>
+        </div>
+        <div class="section-content">
+          <div class="research-writing">
+            <div class="subsection-heading">
+              <span>Publications</span>
+              <span>Accepted &amp; Under Review</span>
+            </div>
+            <article class="publication-item featured-publication">
+              <div class="publication-meta"><span>Accepted workshop paper <strong class="author-badge">Sole author</strong></span><span>2026</span></div>
+              <h3>From Certification to Field Assurance: A Reproducible Public-Evidence Analysis of Hart Verity Voting Systems, 2019–2026</h3>
+              <p>Accepted for presentation at the Rice University EVT/WOTE Workshop (Dec 2026). Analyzes seven years of public certification records, engineering change orders, and county deployment data for Hart Verity voting systems.</p>
+              <a class="text-link" href="https://centerforvoting.rice.edu/electronic-voting-technologies-workshop-trustworthy-elections-conference" target="_blank" rel="noreferrer">Workshop schedule <span>↗</span></a>
+            </article>
+            <article class="publication-item featured-publication">
+              <div class="publication-meta"><span>Accepted workshop paper <strong class="author-badge">Sole author</strong></span><span>2026</span></div>
+              <h3>The Assurance Gradient: Certification-Gap Analysis Across Voting Machines, Electronic Poll Books, and Voter Registration Systems</h3>
+              <p>Scheduled for the Rice University EVT/WOTE Workshop (Dec 2026). Compares federal and state certification scope against actual field exposure across voting machines, electronic poll books, and voter-registration databases.</p>
+              <a class="text-link" href="https://centerforvoting.rice.edu/electronic-voting-technologies-workshop-trustworthy-elections-conference" target="_blank" rel="noreferrer">Workshop schedule <span>↗</span></a>
+            </article>
+            <article class="publication-item featured-publication">
+              <div class="publication-meta"><span>Accepted · IEEE Computer <strong class="author-badge">Sole author</strong></span><span>2026</span></div>
+              <h3>Security Failures in Game-Related Software Supply Chains: Lessons From Fractureiser, Traffic, and ScarCruft/BirdCall</h3>
+              <p>Accepted for publication in IEEE Computer (DOI: 10.1109/MC.2026.3730022). Examines multi-stage build, mod-distribution, and updater supply-chain compromises across Fractureiser, Traffic, and ScarCruft/BirdCall.</p>
+              <a class="text-link" href="https://doi.org/10.1109/MC.2026.3730022" target="_blank" rel="noreferrer">View DOI / Article <span>↗</span></a>
+            </article>
+            <article class="publication-item featured-publication">
+              <div class="publication-meta"><span>Regular issue submission · Under review <strong class="author-badge">Sole author</strong></span><span>IEEE TNSM</span></div>
+              <h3>Measurement-First Behavioral Anomaly Detection at the Kernel Boundary: Reproducible Methods for eBPF-Based Network Security Evaluation</h3>
+              <p>Submitted to IEEE Transactions on Network and Service Management. Tests how eBPF kernel-boundary anomaly detectors hold up under changing background traffic and documents where standard baseline measurements fail.</p>
+              <a class="text-link" href="https://www.researchgate.net/publication/417651545_Measurement-First_Behavioral_Anomaly_Detection_at_the_Kernel_Boundary_Reproducible_Methods_for_eBPF-Based_Network_Security_Evaluation" target="_blank" rel="noreferrer">Read on ResearchGate <span>↗</span></a>
+            </article>
+            <div class="subsection-heading">
+              <span>In Preparation</span>
+              <span>Manuscripts with companion code</span>
+            </div>
+            <article class="publication-item">
+              <div class="publication-meta"><span>In progress <strong class="author-badge">Sole author</strong></span><span>2026</span></div>
+              <h3>QXDP: Sub-Byte Packet Quantization and Runtime Bytecode Synthesis for Line-Rate Polymorphic DDoS Mitigation</h3>
+              <p>An eBPF/XDP packet filter that uses compact sub-byte packet digests and runtime-generated bytecode to drop changing UDP DDoS floods at line rate without exhausting kernel lookup tables.</p>
+              <a class="text-link" href="https://github.com/naeemjr/QXDP" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+            <article class="publication-item">
+              <div class="publication-meta"><span>In progress <strong class="author-badge">Sole author</strong></span><span>2026</span></div>
+              <h3>Refusal Under Uncertainty: Reproducible Benchmarks for Abstention in Security-Critical Systems</h3>
+              <p>Studies when security tools should safely abstain instead of guessing on incomplete data, comparing Linux filesystem policy checks (PolicyContinuity) with encrypted QUIC traffic analysis (QUICScope).</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 Education: I can copy an education-item article when I add another school. -->
+      <section id="education" class="section section-tinted education-section">
+        <div class="container split-section">
+          <div class="section-label">
+            <span class="section-number">03</span>
+            <h2>Education</h2>
+          </div>
+          <div class="section-content education-content">
+            <article class="education-item">
+              <div class="education-meta">
+                <span>B.S. Degree · 120 Credits</span>
+                <span>Expected December 2026</span>
+              </div>
+              <div>
+                <h3>Bachelor of Science in Cybersecurity <em>at</em> Southern New Hampshire University</h3>
+                <p>Cumulative GPA: 3.953 / 4.00. NSA/DHS CAE-CD accredited program.</p>
+                <p class="fun-fact"><strong>Honors:</strong> Summa Cum Laude track (accelerated credit-transfer completion).</p>
+                <p><strong>Technical Focus:</strong> Linux Systems &amp; Kernel Programming (C, Go, Python, eBPF/XDP), Computer Networking (BGP/OSPF, QUIC), Applied Data Structures, and Threat Intelligence.</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-meta">
+                <span>2021 — 2025</span>
+                <span>Completed</span>
+              </div>
+              <div>
+                <h3>Cyber Defense Academy <em>through</em> Homeschool</h3>
+                <p>High school general education and information-systems coursework completed through homeschooling (9th to 12th grade) alongside full-time IT and security work.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Experience: I can copy a timeline-item article when I add another role. -->
+      <section id="experience" class="section section-tinted">
+        <canvas id="experience-canvas" class="section-3d-canvas" aria-hidden="true"></canvas>
+        <div class="container split-section">
+          <div class="section-label">
+            <span class="section-number">04</span>
+            <h2>Experience</h2>
+            <p class="experience-total">4 years across systems administration, security research, and technical operations.</p>
+          </div>
+          <div class="section-content experience-content">
+            <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>Mar 2024 — Present</span>
+                <span>Independent</span>
+              </div>
+              <div>
+                <h3>Independent Security Researcher</h3>
+                <p>
+                  Run an independent Linux and network security testbed (BGP/OSPF routing, kernel VMs, and embedded router hardware) for empirical security research and vulnerability discovery. Track threat-actor C2 infrastructure using Censys, FOFA, and Shodan, perform static firmware analysis, and build open-source eBPF/XDP and network measurement tools.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>Sep 2025 — Present</span>
+                <span>Harris County, Texas</span>
+              </div>
+              <div>
+                <h3>Help Desk Agent <em>at</em> Harris County Elections</h3>
+                <p>
+                  Help election workers resolve account, application, password, and device
+                  issues while following documented procedures and supporting Texas
+                  election-code requirements. Maintain accurate incident records and create
+                  charts, spreadsheets, and presentations for election operations.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>Jun 2025 — Aug 2025</span>
+                <span>Houston, Texas</span>
+              </div>
+              <div>
+                <h3>Technology Assistant <em>at</em> City of Houston TechConnect</h3>
+                <p>
+                  Supported STEM programming for children ages 6–13 by maintaining
+                  program iPads, troubleshooting devices, and setting up technology
+                  stations for community-center activities and the TechConnect Fair.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>Dec 2023 — Mar 2024</span>
+                <span>Remote</span>
+              </div>
+              <div>
+                <h3>Security Analyst Intern <em>at</em> Private MSSP (NDA)</h3>
+                <p>
+                  Investigated phishing and security incidents, extracted indicators of
+                  compromise, tuned IDS and EDR tooling, and developed SOAR playbooks,
+                  incident-response runbooks, and Linux hardening guidance.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <span>Mar 2023 — Aug 2023</span>
+                <span>Remote</span>
+              </div>
+              <div>
+                <h3>Linux Systems Administrator <em>at</em> Auraside Inc. / Hone.gg</h3>
+                <p>
+                  Built and maintained resilient Linux and network environments using
+                  BGP/OSPF, Docker, PostgreSQL, Nginx, and PM2. Supported deployments,
+                  troubleshooting, hardening, firewall configuration, service isolation,
+                  and patch compliance.
+                </p>
+                <p class="fun-fact">My first IT job (started at age 16).</p>
+              </div>
+            </article>
+          </div>
+          <div class="volunteering">
+            <div class="subsection-heading">
+              <span>Volunteering</span>
+              <span>Current memberships</span>
+            </div>
+            <div class="volunteer-grid">
+              <article class="volunteer-item">
+                <div class="volunteer-logo infragard-logo" aria-hidden="true">IG</div>
+                <div>
+                  <div class="volunteer-meta"><span>Mar 2026 — Present</span><span>Member</span></div>
+                  <h3>InfraGard</h3>
+                  <p>Current member of the FBI-partnered public-private network for critical-infrastructure security collaboration.</p>
+                  <a class="text-link" href="https://www.infragard.org/" target="_blank" rel="noreferrer">Visit InfraGard <span>↗</span></a>
+                </div>
+              </article>
+              <article class="volunteer-item">
+                <div class="volunteer-logo ballotpedia-logo" aria-hidden="true">BP</div>
+                <div>
+                  <div class="volunteer-meta"><span>Mar 2026 — Present</span><span>Volunteer</span></div>
+                  <h3>Ballotpedia</h3>
+                  <p>Current volunteer supporting accessible, nonpartisan civic and election-information work.</p>
+                  <a class="text-link" href="https://ballotpedia.org/" target="_blank" rel="noreferrer">Visit Ballotpedia <span>↗</span></a>
+                </div>
+              </article>
+              <article class="volunteer-item">
+                <div class="volunteer-logo usdr-logo" aria-hidden="true">USDR</div>
+                <div>
+                  <div class="volunteer-meta"><span>Nov 2025 — Present</span><span>Volunteer</span></div>
+                  <h3>US Digital Response</h3>
+                  <p>Part of the volunteer network applying technical skills to help public-interest and government teams deliver better services.</p>
+                  <a class="text-link" href="https://www.usdigitalresponse.org/" target="_blank" rel="noreferrer">Visit USDR <span>↗</span></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 Projects: I can copy a project-card article when I add a tool. -->
+      <section id="projects" class="section section-tinted">
+        <canvas id="projects-canvas" class="section-3d-canvas" aria-hidden="true"></canvas>
+        <div class="container split-section">
+          <div class="section-label">
+            <span class="section-number">05</span>
+            <h2>Tools / projects</h2>
+          </div>
+          <div class="section-content project-grid">
+            <article class="project-card">
+              <div class="project-topline"><span>Research tooling</span><span>Python · ML</span></div>
+              <h3>AEGIS-LOOP</h3>
+              <p>A multi-agent Python pipeline using versioned LoRA/QLoRA fine-tuning to automate static code review, threat modeling, and vulnerability triage with promoted local adapters.</p>
+              <a class="text-link" href="https://github.com/naeemjr/AEGIS-LOOP" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>Detection research</span><span>eBPF · Go · C</span></div>
+              <h3>GhostNIC</h3>
+              <p>An eBPF detection research framework that demonstrates passive packet observation techniques at the XDP and TC kernel layers on Linux gateways, paired with defensive detection and audit utilities.</p>
+              <a class="text-link" href="https://github.com/naeemjr/GhostNIC" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>Network security</span><span>Go · Linux</span></div>
+              <h3>EdgeSight</h3>
+              <p>A single-binary passive network detection tool with AF_PACKET capture, behavioral baselining, z-score anomaly detection, ATT&amp;CK-mapped alerts, and an embedded dashboard.</p>
+              <a class="text-link" href="https://github.com/naeemjr/EdgeSight" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>Network security research</span><span>eBPF · Packet systems</span></div>
+              <h3>QXDP</h3>
+              <p>An eBPF/XDP packet filter achieving 21.9 Mpps single-core throughput and 0.0% false-positive rate up to 40% payload mutation — using sub-byte packet digests and runtime bytecode synthesis to drop polymorphic DDoS floods at line rate.</p>
+              <p class="fun-fact">Started after a 1 a.m. conversation about whether LLM quantization ideas could work inside XDP packet filters.</p>
+              <a class="text-link" href="https://github.com/naeemjr/QXDP" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>Security research</span><span>Rust · Linux</span></div>
+              <h3>PolicyContinuity</h3>
+              <p>A reproducible Linux-only benchmark testing whether filesystem containment policies remain safe across state changes, retries, and fallback paths — with deterministic barriers, independent oracle verification, and frozen evaluation protocols.</p>
+              <a class="text-link" href="https://github.com/naeemjr/PolicyContinuity" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+            <article class="project-card">
+              <div class="project-topline"><span>Network security</span><span>Rust · QUIC</span></div>
+              <h3>QUICScope</h3>
+              <p>A fully offline synthetic benchmark measuring when a passive observer of encrypted QUIC traffic can safely associate observations with the same connection, and when it should abstain due to insufficient evidence.</p>
+              <a class="text-link" href="https://github.com/naeemjr/QUICScope" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </article>
+          </div>
+          <p class="section-footnote">More work, papers, and technical notes available on request.</p>
+        </div>
+      </section>
+
+      <!-- 06 Credentials: each card supplies its own popup title and description. -->
+      <section id="certifications" class="section certification-section">
+        <div class="container">
+          <div class="section-banner">
+            <div>
+              <span class="section-number">06 / CREDENTIALS</span>
+              <h2>Certifications</h2>
+            </div>
+            <p>Selected certifications and practical security training.</p>
+          </div>
+          <div class="certification-panel">
+            <div class="certification-heading">
+              <span class="eyebrow">Professional development</span>
+              <h3>Security certifications</h3>
+            </div>
+            <canvas id="cert-canvas" aria-label="Interactive certification logo coins"></canvas>
+            <div class="certification-grid" aria-label="Cybersecurity certifications">
+                <article class="certification-card" data-cert-title="Blue Team Level 1" data-cert-detail="A practical blue-team certification focused on defensive operations, including security monitoring, incident response, threat detection, and hands-on investigation workflows.">
+                  <h4>BTL1</h4>
+                  <p>Blue Team Level 1</p>
+                </article>
+                <article class="certification-card" data-cert-title="Hack The Box" data-cert-detail="A hands-on security training platform used for practical work across penetration testing, Linux, Windows, web security, privilege escalation, and adversary simulation.">
+                  <h4>HTB</h4>
+                  <p>HackTheBox</p>
+                </article>
+                <article class="certification-card" data-cert-title="CompTIA CySA+" data-cert-detail="A cybersecurity analyst certification centered on threat detection, vulnerability management, security operations, incident response, and interpreting security telemetry.">
+                  <h4>CySA+</h4>
+                  <p>CompTIA CySA+</p>
+                </article>
+                <article class="certification-card" data-cert-title="CompTIA Security+" data-cert-detail="A foundational security certification covering core security principles, network security, identity, risk management, operations, and secure infrastructure.">
+                  <h4>Security+</h4>
+                  <p>CompTIA Security+</p>
+                </article>
+                <article class="certification-card" data-cert-title="Practical Network Penetration Tester" data-cert-detail="A practical penetration-testing credential focused on reconnaissance, exploitation, internal network assessment, reporting, and communicating technical findings clearly.">
+                  <h4>PNPT</h4>
+                  <p>Practical Network Penetration Tester · TCM Security Inc.</p>
+                </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 Technical: I update profile URLs and short technical highlights here. -->
+      <section id="technical" class="section section-tinted">
+        <div class="container split-section">
+          <div class="section-label">
+            <span class="section-number">07</span>
+            <h2>CTF / Technical</h2>
+          </div>
+          <div class="section-content technical-content">
+            <p class="lead">Practice that keeps the research close to the machine.</p>
+            <div class="technical-grid">
+              <article>
+                <span class="technical-label">CTF practice</span>
+                <h3>Challenge work &amp; write-ups</h3>
+                <p>Selected work across reverse engineering, binary exploitation, web security, forensics, and secure systems.</p>
+                <div class="technical-links">
+                  <a class="text-link" href="https://tryhackme.com/p/njrsec" target="_blank" rel="noreferrer">TryHackMe · njrsec <span>↗</span></a>
+                  <a class="text-link" href="https://app.hackthebox.com/profile/njrsec" target="_blank" rel="noreferrer">Hack The Box · njrsec <span>↗</span></a>
+                </div>
+              </article>
+              <article>
+                <span class="technical-label">Security research</span>
+                <h3>Bug bounty profiles</h3>
+                <p>Public profiles documenting vulnerability research, responsible disclosure, and practical security testing.</p>
+                <p class="fun-fact"><strong>Recognition:</strong> Received an EPA award through Bugcrowd for bug-bounty work.</p>
+                <p class="fun-fact"><strong>Validation:</strong> Reported a vendor-validated and triaged command-injection bug in <code>/usr/bin/udapi-speedtest.sh</code> on the Ubiquiti UniFi Dream Machine Pro via HackerOne, alongside router firmware static analysis.</p>
+                <div class="technical-links">
+                  <a class="text-link" href="https://bugcrowd.com/h/naeemr" target="_blank" rel="noreferrer">Bugcrowd <span>↗</span></a>
+                  <a class="text-link" href="https://hackerone.com/naeemr" target="_blank" rel="noreferrer">HackerOne <span>↗</span></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research fit: I keep this focused on the programs and labs I want. -->
+      <section class="fit-section">
+        <div class="container fit-inner">
+          <div>
+            <p class="eyebrow">Research fit</p>
+            <h2>Where I want to<br /><em>go deeper.</em></h2>
+          </div>
+          <div class="fit-copy">
+            <p>
+              For my Ph.D., I want to work in a systems or security lab tackling kernel/network defense, firmware and binary analysis, network measurement, or election and public-infrastructure security.
+            </p>
+            <p class="small-note">
+              I am particularly interested in departments with active connections to federal research labs, FFRDCs/UARCs, and public-sector partners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+            <!-- Contact: I use public links here instead of private contact details. -->
+      <section id="contact" class="closing contact-section container">
+        <canvas id="contact-canvas" class="section-3d-canvas" aria-hidden="true"></canvas>
+        <p class="eyebrow">Contact</p>
+        <h2>Research, collaboration,<br /><em>or a good question.</em></h2>
+        <p class="contact-copy">For research conversations, technical collaboration, or questions about my work, reach me through these public profiles.</p>
+        <div class="hero-links">
+          <a class="button button-dark" href="https://github.com/naeemjr" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a>
+          <a class="button button-dark" href="https://www.linkedin.com/in/naeemr/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a class="button button-dark" href="mailto:naeemroussas@gmail.com">naeemroussas@gmail.com <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="cert-dialog" class="cert-dialog">
+      <button class="dialog-close" type="button" aria-label="Close certification details">×</button>
+      <p class="eyebrow">Certification detail</p>
+      <h2 id="cert-dialog-title"></h2>
+      <p id="cert-dialog-detail"></p>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Naeem Roussas</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
